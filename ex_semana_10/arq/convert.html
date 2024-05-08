@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <script src="convermoed.js"> </script>
+    <!-- Não ficar colado na tela inicial -->
+    <style>
+        img {
+            padding: 0px 45px 0px 45px
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- Imagem para ficar mais bonito -->
+    <img src="https://img.freepik.com/vetores-premium/conversor-de-moedas-de-dinheiro-icone-contorno-conversor-de-moedas-de-dinheiro-icone-vetor-cor-plana-isolada_96318-73780.jpg"
+        alt="onversor" width="100px" height="100px">
+
+    <div id="converter">
+        <h2>Conversor de Moedas</h2>
+        <!-- Campo para inserir o valor -->
+        <div>
+            <label for="valor">Valor em Dólar 🇺🇸 (USD):</label>
+            <input type="number" id="valor" min="0" step="0.01">
+        </div>
+        <!-- Botão para iniciar a conversão -->
+        <button onclick="converter()">Converter para Real 🇧🇷 (BRL)</button>
+        <!-- Exibir o resultado da conversão -->
+        <div id="resultado"></div>
+    </div>
+
+
+</body>
+
+</html>
